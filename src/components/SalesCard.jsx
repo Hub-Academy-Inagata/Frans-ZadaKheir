@@ -1,10 +1,22 @@
-import figure1 from '../assets/figure1.jpg';
+import PropTypes from 'prop-types';
 import starIcon from '../assets/star.svg';
 
-const SalesCard = () => {
+const SalesCard = ({ image }) => {
   return (
     <div className="w-full rounded-lg bg-[#E8E4DF] overflow-hidden relative">
-      <img src={figure1} alt="figure" className="w-full h-[313px]" />
+      <div className="w-full h-[313px] relative">
+        <img
+          src={image ? image : 'https://dummyimage.com/313x313'}
+          alt="figure"
+          className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute top-3 left-3 bg-[#EDBF7D] rounded-lg px-3 py-2">
+          <h3 className="font-archivo font-bold text-xs text-[#3F362C]">
+            TOP PICK`S
+          </h3>
+        </div>
+      </div>
+
       <div className="w-full p-4">
         <h3 className="uppercase font-clashdisplay font-semibold text-base text-[#070504]">
           KIRA PASHMINA OVAL
@@ -52,6 +64,10 @@ const SalesCard = () => {
       </div>
     </div>
   );
+};
+
+SalesCard.propTypes = {
+  image: PropTypes.any.isRequired,
 };
 
 export default SalesCard;

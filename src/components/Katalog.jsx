@@ -1,5 +1,8 @@
 import Navbar from './Navbar';
 import HeroKatalog from './HeroKatalog';
+import figure1 from '../assets/figure1.jpg';
+import figure2 from '../assets/figure2.jpg';
+import figure3 from '../assets/figure3.jpg';
 import SalesCard from './SalesCard';
 
 const Katalog = () => {
@@ -12,10 +15,10 @@ const Katalog = () => {
           new sales
         </h2>
         <div className="grid grid-cols-4 w-full gap-10">
-          <SalesCard />
-          <SalesCard />
-          <SalesCard />
-          <SalesCard />
+          <SalesCard image={figure1} />
+          <SalesCard image={figure2} />
+          <SalesCard image={figure3} />
+          <SalesCard image={figure1} />
         </div>
       </div>
     </div>
