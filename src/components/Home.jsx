@@ -5,65 +5,68 @@ import helpCircle from '../assets/help-circle.svg';
 
 const Home = () => {
   return (
-    <div className="w-full min-h-screen flex justify-between items-start bg-[url('/src/assets/Welcome-Page-bg.png')] bg-center bg-cover p-10">
-      <div className="w-[150px]">
+    <div className="w-full min-h-screen flex justify-center items-center  lg:justify-between lg:items-start bg-[url('/src/assets/Welcome-Page-bg.png')] bg-center bg-cover p-0 lg:p-10">
+      <div className="w-[150px] hidden lg:block">
         <img src={logo1} alt="logo" width="150px" />
       </div>
-      <div className="rounded-[16px] bg-[#3F362C] border-4 border-[#E8E4DF] w-[375px] p-8 flex flex-col items-center">
-        <img
-          src={logo2}
-          className="mb-3"
-          alt="logo-2"
-          width="140px"
-        />
-        <h3 className="font-archivo text-base font-normal text-white mb-7">
-          The secret style for your fashion
-        </h3>
-        <h4 className="font-archivo text-sm font-normal text-white mb-3">
-          Hubungi kami di
-        </h4>
-        <div className="flex flex-col w-full gap-3 mb-6">
-          <a
-            href="#"
-            className="cursor-pointer bg-[#E8E4DF] w-full font-clashdisplay font-medium text-lg text-[#070504] flex justify-center items-center rounded-lg h-[46px]"
-          >
-            <h1>WhatsApp</h1>
-          </a>
-          <a
-            href="#"
-            className="cursor-pointer bg-[#E8E4DF] w-full font-clashdisplay font-medium text-lg text-[#070504] flex justify-center items-center rounded-lg h-[46px]"
-          >
-            <h1>Instagram</h1>
-          </a>
-          <a
-            href="#"
-            className="cursor-pointer bg-[#E8E4DF] w-full font-clashdisplay font-medium text-lg text-[#070504] flex justify-center items-center rounded-lg h-[46px]"
-          >
-            <h1>Email</h1>
-          </a>
+      <div className="w-full md:w-[375px] 2xl:h-[90vh] flex items-center">
+        <div className="md:rounded-[16px] md:bg-[#3F362C] border-0 md:border-4 border-[#E8E4DF] w-full p-8 flex flex-col items-center">
+          <img
+            src={logo2}
+            className="mb-3"
+            alt="logo-2"
+            width="140px"
+          />
+          <h3 className="text-center font-archivo text-base font-normal text-white mb-7">
+            The secret style for your fashion
+          </h3>
+          <h4 className="font-archivo text-sm font-normal text-white mb-3">
+            Hubungi kami di
+          </h4>
+          <div className="flex flex-col w-full gap-3 mb-6">
+            <a
+              href="#"
+              className="cursor-pointer bg-[#E8E4DF] w-full font-clashdisplay font-medium text-lg text-[#070504] flex justify-center items-center rounded-lg h-[46px]"
+            >
+              <h1>WhatsApp</h1>
+            </a>
+            <a
+              href="#"
+              className="cursor-pointer bg-[#E8E4DF] w-full font-clashdisplay font-medium text-lg text-[#070504] flex justify-center items-center rounded-lg h-[46px]"
+            >
+              <h1>Instagram</h1>
+            </a>
+            <a
+              href="#"
+              className="cursor-pointer bg-[#E8E4DF] w-full font-clashdisplay font-medium text-lg text-[#070504] flex justify-center items-center rounded-lg h-[46px]"
+            >
+              <h1>Email</h1>
+            </a>
+          </div>
+          <h4 className="font-archivo text-sm font-normal text-white mb-3">
+            Produk kami
+          </h4>
+          <div className="grid grid-cols-2 w-full font-clashdisplay font-bold text-lg text-[#3F362C] gap-3 mb-10">
+            <a
+              href="#"
+              className="w-full h-[147px] rounded-lg bg-[url('/src/assets/hampers-bg.png')] bg-center bg-cover flex justify-center items-center"
+            >
+              Hampers
+            </a>
+            <Link
+              to="/katalog"
+              className="w-full h-[147px] rounded-lg bg-[url('/src/assets/katalog-bg.png')] bg-center bg-cover flex justify-center items-center"
+            >
+              Katalog
+            </Link>
+          </div>
+          <h4 className="text-center font-archivo text-xs font-normal text-white">
+            Copyright © 2023. Made with 💕 Zadakheir
+          </h4>
         </div>
-        <h4 className="font-archivo text-sm font-normal text-white mb-3">
-          Produk kami
-        </h4>
-        <div className="flex justify-between items-center w-full font-clashdisplay font-bold text-lg text-[#3F362C] gap-2 mb-10">
-          <a
-            href="#"
-            className="w-[147px] h-[147px] rounded-lg bg-[url('/src/assets/hampers-bg.png')] bg-center bg-cover flex justify-center items-center"
-          >
-            Hampers
-          </a>
-          <Link
-            to="/katalog"
-            className="w-[147px] h-[147px] rounded-lg bg-[url('/src/assets/katalog-bg.png')] bg-center bg-cover flex justify-center items-center"
-          >
-            Katalog
-          </Link>
-        </div>
-        <h4 className="text-center font-archivo text-xs font-normal text-white">
-          Copyright © 2023. Made with 💕 Zadakheir
-        </h4>
       </div>
-      <div className="w-[150px] flex justify-end">
+
+      <div className="w-[150px] hidden lg:flex justify-end">
         <img src={helpCircle} alt="help" width="32px" />
       </div>
     </div>

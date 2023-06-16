@@ -1,10 +1,12 @@
+// import 'flowbite';
+'use client';
 const Navbar = () => {
   return (
     <nav className="bg-[#070504] fixed w-full z-20 top-0 left-0">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-[1920px] flex flex-wrap items-center justify-between mx-auto p-4 px-5 lg:px-10">
         <a
           href="/"
-          className="relative overflow-visible bg-transparent w-[100px] h-8"
+          className="relative overflow-visible bg-transparent w-[85px] lg:w-[100px] h-8"
         >
           <img
             src="/src/assets/logo-navbar.png"
