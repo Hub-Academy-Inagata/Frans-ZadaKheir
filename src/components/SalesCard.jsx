@@ -3,7 +3,7 @@ import starIcon from '../assets/star.svg';
 
 const SalesCard = ({ image }) => {
   return (
-    <div className="w-full rounded-lg bg-[#E8E4DF] overflow-hidden relative">
+    <div className="w-full rounded-lg bg-[#E8E4DF] overflow-hidden relative lg:hover:scale-100 lg:hover:-translate-y-2 lg:hover:shadow-lg lg:hover:shadow-[#edb60048] transition cursor-pointer">
       <div className="w-full h-[175px] lg:h-[313px] relative">
         <img
           src={image ? image : 'https://dummyimage.com/313x313'}
@@ -18,7 +18,7 @@ const SalesCard = ({ image }) => {
       </div>
 
       <div className="w-full p-4">
-        <h3 className="uppercase font-clashdisplay font-semibold text-base text-[#070504]">
+        <h3 className="uppercase font-clashdisplay font-semibold text-[#070504] lg:text-base text-xs">
           KIRA PASHMINA OVAL
         </h3>
         <div className="flex justify-between items-center py-2">
@@ -54,10 +54,10 @@ const SalesCard = ({ image }) => {
           </h3>
         </div>
         <div className="flex flex-col lg:flex-row gap-1 items-start lg:items-center">
-          <h3 className="text-[#9B2828] font-clashdisplay font-semibold text-xs line-through">
+          <h3 className="text-[#9B2828] font-clashdisplay font-semibold lg:text-xs text-[10px]  line-through">
             Rp105.000
           </h3>
-          <h3 className="text-[#3F362C] font-clashdisplay font-semibold text-base">
+          <h3 className="text-[#3F362C] font-clashdisplay font-semibold lg:text-base text-xs">
             Rp55.000
           </h3>
         </div>

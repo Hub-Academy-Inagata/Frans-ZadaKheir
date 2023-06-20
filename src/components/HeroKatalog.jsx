@@ -13,7 +13,7 @@ const HeroKatalog = () => {
           with Confidence!
         </h3>
       </div>
-      <button className="w-[250px] lg:w-[311px] h-[44px] rounded-lg bg-gradient-to-r from-[#F6CD73] to-[#9C7539] cursor-pointer flex justify-center items-center">
+      <button className="w-[250px] lg:w-[311px] h-[44px] rounded-lg bg-gradient-to-r from-[#F6CD73] to-[#9C7539] cursor-pointer flex justify-center items-center lg:hover:scale-105 lg:hover:-translate-y-1 lg:hover:shadow-md lg:hover:shadow-[#edb60048] transition">
         <h3 className="font-archivo font-semibold text-lg text-[#070504]">
           Shop Now
         </h3>
