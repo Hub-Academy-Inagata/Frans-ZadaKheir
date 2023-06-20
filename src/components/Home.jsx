@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import logo1 from '../assets/logo-1.svg';
 import logo2 from '../assets/logo-2.svg';
 import helpCircle from '../assets/help-circle.svg';
@@ -53,12 +53,12 @@ const Home = () => {
             >
               Hampers
             </a>
-            <Link
-              to="/katalog"
+            <a
+              href="/Frans-ZadaKheir/katalog.html"
               className="w-full h-[147px] rounded-lg bg-[url('/src/assets/katalog-bg.png')] bg-center bg-cover flex justify-center items-center lg:hover:scale-105 lg:hover:-translate-y-1 lg:hover:shadow-md lg:hover:shadow-[#edb60048] transition"
             >
               Katalog
-            </Link>
+            </a>
           </div>
           <h4 className="text-center font-archivo text-xs font-normal text-white">
             Copyright © 2023. Made with 💕 Zadakheir
