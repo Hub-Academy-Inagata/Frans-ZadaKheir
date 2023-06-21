@@ -8,6 +8,9 @@ import { IconContext } from 'react-icons';
 
 const NavbarCustom = () => {
   const [toggle, setToggle] = useState(false);
+  const customNavbarTheme = {
+    base: 'bg-black dark:bg-black px-5 py-[5px]',
+  };
   const customTextInput = {
     base: 'w-[500px]',
     field: {
@@ -24,7 +27,8 @@ const NavbarCustom = () => {
     <Navbar
       fluid={true}
       rounded={false}
-      className="bg-black px-5 py-[5px]"
+      theme={customNavbarTheme}
+      // className="bg-black px-5 py-[5px]"
     >
       <Navbar.Brand className="container flex flex-wrap items-center justify-between mx-auto overflow-visible relative">
         <Link
