@@ -1,4 +1,4 @@
-import Navbar from './Navbar';
+import NavbarCustom from './Navbar';
 import HeroKatalog from './HeroKatalog';
 import figure1 from '../assets/figure1.jpg';
 import figure2 from '../assets/figure2.jpg';
@@ -8,7 +8,7 @@ import SalesCard from './SalesCard';
 const Katalog = () => {
   return (
     <div className="w-full min-h-screen bg-[#3F362C]">
-      <Navbar />
+      <NavbarCustom />
       <HeroKatalog />
       <div className="w-full mx-auto container py-24">
         <h2 className="text-center uppercase text-4xl lg:text-[56px] font-bold font-clashdisplay text-white tracking-[2px] mb-8">
