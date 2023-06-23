@@ -42,7 +42,7 @@ const NavbarCustom = () => {
             height="174px"
           />
         </Link>
-        <div className="hidden lg:flex gap-5 items-center font-clashdisplay font-medium">
+        <div className="hidden sm:flex gap-5 items-center font-clashdisplay font-medium">
           <Link className="text-[#EDBF7D] p-5" to="/katalog">
             New Sales!
           </Link>
@@ -82,7 +82,7 @@ const NavbarCustom = () => {
           id="password1"
           type="text"
           placeholder="Search"
-          className="hidden lg:block text-sm text-white border border-gray-300 rounded-lg"
+          className="hidden xl:block text-sm text-white border border-gray-300 rounded-lg"
         />
         <div className="flex md:order-2">
           {/* {theme === 'dark' ? (
@@ -102,7 +102,7 @@ const NavbarCustom = () => {
                             Dark Mode
                         </button>
                     )} */}
-          <div className="lg:hidden flex align-middle justify-center p-1 text-white">
+          <div className="sm:hidden flex align-middle justify-center p-1 text-white">
             <IconContext.Provider value={{ size: 30 }}>
               <GiHamburgerMenu onClick={(e) => setToggle(!toggle)} />
             </IconContext.Provider>
@@ -110,7 +110,7 @@ const NavbarCustom = () => {
         </div>
       </Navbar.Brand>
       {toggle ? (
-        <div className="bg-black rounded-lg text-white w-full lg:hidden">
+        <div className="bg-black rounded-lg text-white w-full sm:hidden">
           <div className="flex flex-col justify-center items-start font-clashdisplay font-medium text-center pl-32">
             <Link className="text-[#EDBF7D] mb-5" to="/katalog">
               New Sales!
